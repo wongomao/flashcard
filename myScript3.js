@@ -1,3 +1,3 @@
 function myFunction() {
-    document.getElementById("lick-image").src = "images/Lick02.PNG";
-  }
+  document.getElementById("lick-image").src = "images/Lick02.PNG";
+}
