@@ -11,14 +11,37 @@ cards = [
     { front: "Lick 10", back: "images/Lick10.PNG" }
 ];
 
+const WAITTIME = 1000;
 
-function echoImageStrs() {
-    // cards.array.forEach(element => {
-    //     console.log(element.back);
-    // });
-    cards.forEach(echoImageStr)
+function shuffleCards(cards) {
+    for (i = cards.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * i)
+        k = cards[i];
+        cards[i] = cards[j];
+        cards[j] = k;
+    }
+    return cards;
 }
 
-function echoImageStr(item) {
-    console.log(item.back);
+function playCards() {
+    cards = shuffleCards(cards);
+    cards.forEach(card => {
+        console.log("card " + card.front)
+        document.getElementById("main").innerHTML = '<h1 class="display-1">' + card.front + '</h1>';
+        window.setTimeout(swapMainContent, WAITTIME, card);
+    });
+}
+
+
+function echoImageStrs() {
+    cards = shuffleCards(cards);
+    cards.forEach(echoImage);
+}
+
+function echoImage(card) {
+    console.log(card.front + " " + card.back);
+}
+
+function swapMainContent(card) {
+    document.getElementById("main").innerHTML = '<img src="' + card.back + '">';
 }
