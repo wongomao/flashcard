@@ -1,5 +1,40 @@
 cards = [
     { front: "Lick 1", back: "images/Lick01.PNG" },
+    { front: "Lick 1", back: "images/Lick01.PNG" },
+    { front: "Lick 1", back: "images/Lick01.PNG" },
+    { front: "Lick 1", back: "images/Lick01.PNG" },
+    { front: "Lick 1", back: "images/Lick01.PNG" },
+    { front: "Lick 1", back: "images/Lick01.PNG" },
+    { front: "Lick 2", back: "images/Lick02.PNG" },
+    { front: "Lick 2", back: "images/Lick02.PNG" },
+    { front: "Lick 2", back: "images/Lick02.PNG" },
+    { front: "Lick 2", back: "images/Lick02.PNG" },
+    { front: "Lick 2", back: "images/Lick02.PNG" },
+    { front: "Lick 2", back: "images/Lick02.PNG" },
+    { front: "Lick 3", back: "images/Lick03.PNG" },
+    { front: "Lick 3", back: "images/Lick03.PNG" },
+    { front: "Lick 3", back: "images/Lick03.PNG" },
+    { front: "Lick 3", back: "images/Lick03.PNG" },
+    { front: "Lick 3", back: "images/Lick03.PNG" },
+    { front: "Lick 4", back: "images/Lick04.PNG" },
+    { front: "Lick 4", back: "images/Lick04.PNG" },
+    { front: "Lick 4", back: "images/Lick04.PNG" },
+    { front: "Lick 4", back: "images/Lick04.PNG" },
+    { front: "Lick 4", back: "images/Lick04.PNG" },
+    { front: "Lick 4", back: "images/Lick04.PNG" },
+    { front: "Lick 4", back: "images/Lick04.PNG" },
+    { front: "Lick 5", back: "images/Lick05.PNG" },
+    { front: "Lick 5", back: "images/Lick05.PNG" },
+    { front: "Lick 5", back: "images/Lick05.PNG" },
+    { front: "Lick 5", back: "images/Lick05.PNG" },
+    { front: "Lick 5", back: "images/Lick05.PNG" },
+    { front: "Lick 5", back: "images/Lick05.PNG" },
+    { front: "Lick 5", back: "images/Lick05.PNG" }
+];
+
+/*
+cards = [
+    { front: "Lick 1", back: "images/Lick01.PNG" },
     { front: "Lick 2", back: "images/Lick02.PNG" },
     { front: "Lick 3", back: "images/Lick03.PNG" },
     { front: "Lick 4", back: "images/Lick04.PNG" },
@@ -10,8 +45,9 @@ cards = [
     { front: "Lick 9", back: "images/Lick09.PNG" },
     { front: "Lick 10", back: "images/Lick10.PNG" }
 ];
+ */
 
-const WAITTIME = 1000;
+const WAITTIME = 5000;
 
 
 var intervalObj;
