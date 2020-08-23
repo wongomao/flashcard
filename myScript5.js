@@ -49,19 +49,51 @@ cards = [
 
 const WAITTIME = 5000;
 
+class Timer {
+    constructor(playFunction) {
+        this._playFunction = playFunction;
+        this._intervalObj = undefined;
+    }
 
-var intervalObj;
+    set buttonElement(x) {
+        this._buttonElement = x;
+    }
 
-function playCards() {
-    if (intervalObj === undefined) {
-        document.getElementById("startstop").innerHTML = "Stop";
-        intervalObj = setInterval(showRandomCard, WAITTIME);
-    } else {
-        document.getElementById("startstop").innerHTML = "Start";
-        clearInterval(intervalObj)
-        intervalObj = undefined;
+    playIsStopped() {
+        return this._intervalObj === undefined;
+    }
+
+    startPlay() {
+        this._buttonElement.innerHTML = "Stop";
+        this._intervalObj = setInterval(this._playFunction, WAITTIME);
+    }
+
+    stopPlay() {
+        this._buttonElement.innerHTML = "Start";
+        clearInterval(this._intervalObj);
+        this._intervalObj = undefined;
+    }
+
+}
+
+var myTimer = new Timer(showRandomCard);
+
+function togglePlay() {
+
+    myTimer.buttonElement = document.getElementById("togglePlayBtn");
+    if (myTimer.playIsStopped()) {
+        myTimer.startPlay();
+    }
+    else {
+        myTimer.stopPlay();
     }
 }
+
+
+
+
+
+
 
 var isFront = false;
 var currentCard = 0;
