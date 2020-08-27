@@ -7,7 +7,7 @@ cards = [
     { front: "Lick 6", back: "images/Lick06.PNG", weight: 4 },
     { front: "Lick 7", back: "images/Lick07.PNG", weight: 4 },
     { front: "Lick 8", back: "images/Lick08.PNG", weight: 4 },
-    { front: "Lick 9", back: "images/Lick09.PNG", weight: 0 },
+    { front: "Lick 9", back: "images/Lick09.PNG", weight: 4 },
     { front: "Lick 10", back: "images/Lick10.PNG", weight: 0 }
 ];
 
