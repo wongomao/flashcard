@@ -1,4 +1,15 @@
 cards = [
+    { front: "G Lick 1", back: "images/Dummies-G-Lick01.PNG", weight: 1 },
+    { front: "G Lick 2", back: "images/Dummies-G-Lick02.PNG", weight: 1 },
+    { front: "G Lick 3", back: "images/Dummies-G-Lick03.PNG", weight: 1 },
+    { front: "G Lick 4", back: "images/Dummies-G-Lick04.PNG", weight: 1 },
+    { front: "G Lick 5", back: "images/Dummies-G-Lick05.PNG", weight: 1 },
+    { front: "G Lick 6", back: "images/Dummies-G-Lick06.PNG", weight: 1 },
+    { front: "G Lick 7", back: "images/Dummies-G-Lick07.PNG", weight: 1 },
+    { front: "G Lick 8", back: "images/Dummies-G-Lick08.PNG", weight: 1 }
+];
+/* original
+cards = [
     { front: "Lick 1", back: "images/Lick01.PNG", weight: 4 },
     { front: "Lick 2", back: "images/Lick02.PNG", weight: 4 },
     { front: "Lick 3", back: "images/Lick03.PNG", weight: 4 },
@@ -9,9 +20,9 @@ cards = [
     { front: "Lick 8", back: "images/Lick08.PNG", weight: 4 },
     { front: "Lick 9", back: "images/Lick09.PNG", weight: 4 },
     { front: "Lick 10", back: "images/Lick10.PNG", weight: 4 }
-];
+];*/
 
-const WAITTIME = 5000;
+const WAITTIME = 2000;
 
 class Timer {
     constructor(playFunction) {
