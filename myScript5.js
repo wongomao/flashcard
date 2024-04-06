@@ -48,12 +48,21 @@ class CardFlasher {
         this._stack = [];
     }
 
+    darkenBackground() {
+        document.getElementById("main").style.backgroundColor = "blue";
+    }
+
+    lightenBackground() {
+        document.getElementById("main").style.backgroundColor = "initial"
+    }
+
     displayFront(card) {
         document.getElementById("main").innerHTML = '<h1 class="display-1">' + card.front + '</h1>';
     }
 
     displayBack(card) {
         document.getElementById("main").innerHTML = '<img src="' + card.back + '">';
+        this.lightenBackground();
     }
 
     showCard() {
@@ -65,6 +74,7 @@ class CardFlasher {
         }
         // current card is undefined, so get next card from stack
         if (this._stack.length === 0) {
+            this.darkenBackground();
             this._stack = this.buildStack();
         }
         if (this._stack.length === 0) {
